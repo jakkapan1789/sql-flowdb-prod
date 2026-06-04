@@ -1,0 +1,11 @@
+CREATE OR REPLACE FUNCTION fn_test(
+  
+)
+RETURNS INT
+AS
+BEGIN
+  
+
+ 
+  RETURN 2;
+END;

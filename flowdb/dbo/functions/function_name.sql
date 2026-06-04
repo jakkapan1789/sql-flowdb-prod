@@ -1,0 +1,11 @@
+CREATE OR REPLACE FUNCTION function_name(
+  
+  @param3 INT,
+  @param2 VARCHAR(255)
+)
+RETURNS INT
+AS
+BEGIN
+  
+  RETURN 0;
+END;

@@ -1,0 +1,21 @@
+CREATE TABLE [flowdb].[dbo].[workflow_requests] (
+  [id] nvarchar(50) NOT NULL,
+  [workflow_id] nvarchar(50) NOT NULL,
+  [version_id] nvarchar(50) NOT NULL,
+  [status] nvarchar(30) NOT NULL,
+  [current_stage_id] nvarchar(100),
+  [form_data_json] nvarchar(-0.5) NOT NULL,
+  [requestor_name] nvarchar(200) NOT NULL,
+  [requestor_email] nvarchar(300),
+  [requestor_dept] nvarchar(200),
+  [requestor_emp_no] nvarchar(100),
+  [submitted_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
+  [completed_at] datetime2,
+  [current_assignee] nvarchar(200),
+  [request_no] nvarchar(50),
+  [requestor_supervisor_emp_no] nvarchar(50),
+  [requestor_manager_emp_no] nvarchar(50),
+  [requestor_director_emp_no] nvarchar(50),
+  [title] nvarchar(200),
+  PRIMARY KEY ([id])
+);

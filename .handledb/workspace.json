@@ -1,6 +1,7 @@
 {
-  "id": "ws-1780535807669",
+  "id": "ws-1780538449552",
   "name": "Flowdb",
   "connectionId": "conn-1780290528215-8fo85wrqbmb",
-  "createdAt": 1780535807669
+  "database": "flowdb",
+  "createdAt": 1780538449552
 }
