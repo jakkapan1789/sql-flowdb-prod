@@ -5,6 +5,6 @@ CREATE TABLE [flowdb].[dbo].[legacy_request_attachments] (
   [storage_path] nvarchar(500) NOT NULL,
   [mime_type] nvarchar(100),
   [size_bytes] bigint,
-  [uploaded_at] datetime2 NOT NULL,
+  [uploaded_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
   PRIMARY KEY ([id])
 );

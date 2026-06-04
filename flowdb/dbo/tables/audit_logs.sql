@@ -11,6 +11,6 @@ CREATE TABLE [flowdb].[dbo].[audit_logs] (
   [old_value_json] nvarchar(-0.5),
   [new_value_json] nvarchar(-0.5),
   [ip_address] nvarchar(50),
-  [occurred_at] datetime2 NOT NULL,
+  [occurred_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
   PRIMARY KEY ([id])
 );

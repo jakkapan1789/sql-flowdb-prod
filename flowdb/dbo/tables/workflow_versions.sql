@@ -4,8 +4,8 @@ CREATE TABLE [flowdb].[dbo].[workflow_versions] (
   [label] nvarchar(200) NOT NULL,
   [comment] nvarchar(1000),
   [status] nvarchar(20) NOT NULL,
-  [is_production] bit NOT NULL,
-  [saved_at] datetime2 NOT NULL,
+  [is_production] bit NOT NULL DEFAULT ((0)),
+  [saved_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
   [edited_from_id] nvarchar(50),
   [definition_json] nvarchar(-0.5) NOT NULL,
   PRIMARY KEY ([id])
