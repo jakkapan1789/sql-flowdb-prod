@@ -5,9 +5,9 @@ CREATE TABLE [flowdb].[dbo].[user_delegations] (
   [workflow_id] nvarchar(50),
   [from_date] datetime2 NOT NULL,
   [to_date] datetime2,
-  [is_active] bit NOT NULL DEFAULT ((1)),
+  [is_active] bit NOT NULL,
   [note] nvarchar(1000),
-  [created_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
+  [created_at] datetime2 NOT NULL,
   [created_by] nvarchar(200),
   PRIMARY KEY ([id])
 );

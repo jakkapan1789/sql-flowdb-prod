@@ -9,7 +9,7 @@ CREATE TABLE [flowdb].[dbo].[workflow_requests] (
   [requestor_email] nvarchar(300),
   [requestor_dept] nvarchar(200),
   [requestor_emp_no] nvarchar(100),
-  [submitted_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
+  [submitted_at] datetime2 NOT NULL,
   [completed_at] datetime2,
   [current_assignee] nvarchar(200),
   [request_no] nvarchar(50),

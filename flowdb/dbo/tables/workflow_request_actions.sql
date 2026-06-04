@@ -7,7 +7,7 @@ CREATE TABLE [flowdb].[dbo].[workflow_request_actions] (
   [approver_name] nvarchar(200) NOT NULL,
   [approver_email] nvarchar(300),
   [comment] nvarchar(2000),
-  [acted_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
+  [acted_at] datetime2 NOT NULL,
   [assigned_to] nvarchar(200),
   [delegated_from_user_id] int,
   PRIMARY KEY ([id])

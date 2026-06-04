@@ -7,8 +7,8 @@ CREATE TABLE [flowdb].[dbo].[webhook_delivery_logs] (
   [payload_json] nvarchar(-0.5),
   [status_code] int,
   [response_body] nvarchar(2000),
-  [attempt_no] int NOT NULL DEFAULT ((1)),
-  [is_success] bit NOT NULL DEFAULT ((0)),
-  [delivered_at] datetime2 NOT NULL DEFAULT (sysutcdatetime()),
+  [attempt_no] int NOT NULL,
+  [is_success] bit NOT NULL,
+  [delivered_at] datetime2 NOT NULL,
   PRIMARY KEY ([id])
 );
